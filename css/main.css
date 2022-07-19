@@ -20,6 +20,28 @@ nav h1{
     text-align: center;
     margin-top: auto;
 }
+ .right
+{
+float: right;
+padding: 10px 5px;
+
+}
+
+.right a
+{
+margin-right: 15px;
+font-size: 20px;
+text-decoration: none;
+color: black;
+
+}
+.right a:hover
+{
+color: green;
+font-size: 23px;
+}
+
+
 main{
 
 width: 100%;
