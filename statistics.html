@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>task 11</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
 
     <nav>
         <h1>
             welcome to my page
         </h1>
-    
+
         <div class="right">
-    
+
             <a href="index.html">home</a>
-            
+
             <a href="statistics.html">statistics</a>
-            
+
         </div>
-        <main>
+    </nav>
+    <main>
 
-            <table>
-                <thead>
+        <table>
+            <thead>
                 <tr>
-                 <th>food ID</th>
-                 <th>food name</th>
-                 <th>food type</th>
-                 <th>food price</th>
-             
-             </tr>
-             </thead>
-             <tbody id="foodtable"></tbody>
-             
-             </table>
+                    <th>food ID</th>
+                    <th>food name</th>
+                    <th>food type</th>
+                    <th>food price</th>
+
+                </tr>
+            </thead>
+            <tbody id="foodtable"></tbody>
+
+        </table>
 
 
-        </main>
+        <div>
+            <canvas id="myChart"></canvas>
+        </div>
 
-
-        
-
-            <footer>
-                <div>
-                    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> firas All Rights Reserved</p>
-                </div>
-        
-            </footer>
-        
-        
+    </main>
     
-        
-    
-    
-    
-        </nav>
-        <script src="./js/statistics.js"></script>
 
-    </body>
-    </html>
+
+
+    <footer>
+        <div>
+            <p>Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> firas All Rights Reserved
+            </p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="./js/statistics.js"></script>
+
+</body>
+
+</html>

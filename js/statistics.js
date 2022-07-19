@@ -59,6 +59,45 @@ function savedata(){
     }
     }
     getdata();
+
+    const types=[];
+    const prices=[];
+    for(let i=0;i<food.length;i++){
+      types.push(food[i].type);
+      prices.push(food[i].price);
+    }
+
+    
+        const labels = [
+          'fat',
+          'protin',
+          'starchy food',
+          'fruits and vegetables',
+          ,
+        ];
+      
+        const data = {
+          labels: types,
+          datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'blue',
+            borderColor: 'black',
+            data: prices,
+          }]
+        };
+      
+        const config = {
+          type: 'pie',
+          data: data,
+          options: {}
+        };
+      
+
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  
   
   
   
